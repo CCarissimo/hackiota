@@ -2,7 +2,7 @@
 
 *Participatory collection of sensor data, stored on the IOTA tangle with easily obtainable devices.*
 
-![](images/logo.jpeg)
+![](images/HackIOTA.png)
 
 ### Short Description
 
@@ -17,19 +17,25 @@ This repository documents the progress of team hackIOTA participating at the Par
 - immutable,
 - accessible.
 
-For Example:
-
-
-
 ### Repositories
 
 The following repositories collect the code we put together:
 
 - Raspberri Pi Sensor Readings set to API: https://github.com/DouglasBrennan/environment_sensor.git
 
-- API receives Sensor Readings and publishes to Tangle: https://github.com/DouglasBrennan/hackIota.git
+![](images/sensor.jpeg)
+
+- API receives Sensor Readings and publishes to Tangle, and data can be verified: https://github.com/DouglasBrennan/hackIota.git
+
+![](images/verifier_entry.jpeg)
+
+![](images/verifier.jpeg)
 
 - Visualizations of Live Measurements from the Tangle: https://github.com/shivus123/mapiota
+
+![](images/map.jpeg)
+
+![](images/humidity.jpeg)
 
 ### Resources
 
