@@ -1,6 +1,6 @@
 # hackIOTA
 
-*Participatory collection of sensor data, stored on the IOTA tangle with easily obtainable devices.*
+*Measurement - distributed, verifiable and secure*
 
 ![](images/HackIOTA.png)
 
