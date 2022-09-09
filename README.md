@@ -1,4 +1,4 @@
-# hackIOTA
+# HackIOTA
 
 *Measurement - distributed, verifiable and secure*
 
