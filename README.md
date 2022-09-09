@@ -15,7 +15,8 @@ This repository documents the progress of team hackIOTA participating at the Par
 
 - secure,
 - immutable,
-- accessible.
+- accessible,
+- and verifiable.
 
 ### Repositories
 
