@@ -1,16 +1,29 @@
 # hackIOTA
 
+*Participatory collection of sensor data, stored on the IOTA tangle with easily obtainable devices.*
+
+![](images/logo.jpeg)
+
+### Short Description
+
+Our goal is the broad and participatory collection of environmental data of our surroundings,
+incentivising and protecting measurements by using the IOTA tangle combined with easily accessible sensor devices.
+
 ### Introduction
 
-This repository documents the progress of team hackIOTA participating at the Participatory Resilience Hackathon at ETHZ, 2022. The team aims to combine an air quality sensor with the IOTA tangle, a distributed ledger technology that was designed for seamless integration of Internet of Things (IoT) devices. The IOTA Tangle provides an ideal location for sensor measurements to be stored:
+This repository documents the progress of team hackIOTA participating at the Participatory Resilience Hackathon at ETHZ, 2022. The team aims to combine an air quality sensor with the IOTA tangle, a distributed ledger technology that was designed for seamless integration of Internet of Things (IoT) devices. The IOTA Tangle provides an ideal location for sensor measurements to be stored such that measurements are:
 
 - secure,
 - immutable,
 - accessible.
 
-Furthermore, the IOTA Tangle, leveraging cryptocurrency transactions, can be used to incentivize workers to take measurements that provide high quality of service, and informative sensor readings.
+For Example:
+
+
 
 ### Repositories
+
+The following repositories collect the code we put together:
 
 - Raspberri Pi Sensor Readings set to API: https://github.com/DouglasBrennan/environment_sensor.git
 
@@ -24,52 +37,9 @@ Tangle developer nodes for testings purposes (devnet) can be found at: http://wi
 
 iota-client use resources: https://wiki.iota.org/iota.rs/explanations/address_key_space
 
-
-
-### Todo
-
-- message formatting:
-
-  - what length message can we send?
-  - what is the type of the data we can send?
-  - how does it compare to the data produced from the sensors?
-
-  - after finding messages in the tangle, convert them to readable
-  - format them nicely in a file
-
-- Sensor Data:
-
-  - what data will we send to the tangle?
-  - how will we convert it to Bytes for messages?
-
-- Indexing:
-
-  - is there a limit to the number of messages we can send for a given index
-
-- Requesting:
-
-  - how can we request that a sensor takes a measurement?
-  - Easiest: with messages and indexes
-  - harder: via an account and IOTA balances
-  - Expert: with smart contracts, accounts and IOTA balances
-
-- visualization
-
-  - can we read messages from the tangle and visualize them on a map?
-
-- accounts, currency:
-
-  - can we set up a wallet on our sensors, to receive IOTA?
-  - can we set up sensors to run python code when they receive IOTA?
-
-- Rewarding, payments:
-
-  - how much should sensors receive as rewards for their measurements
-  - how should an Agent decide which sensors to use to learn most about an area?
-
-
-
 ### Future Work
+
+Furthermore, the IOTA Tangle, leveraging cryptocurrency transactions, can be used to incentivize workers to take measurements that provide high quality of service, and informative sensor readings.
 
 Mobile crowd sensing (MCS) is the process by which a network of sensing entities is used to sample an environment. Multi-Armed Bandit (MAB) algorithms are proposed for requesters to learn to pick the sensing entities (workers) such that certain metrics are optimised over time. In the language of reinforcement learning, such that regret is minimized. 
 
@@ -77,7 +47,7 @@ For example, a requester may wish to minimize its utilized resources to sample N
 
 In [@xiong2015crowdtasker] the data quality is based on the reliability of the worker, how likely it is that the worker will accept the measurement request. In [@wu2019context], the MAB algorithm is extended with knowledge about a workers extrinsic ability, and intrinsic ability such that decisions can be made more effectively by the requester. 
 
-We propose  novel manner to evaluate measurement quality that is not based solely on the reliability of the workers, but also on the history of measurements from those workers, and in correlated areas. The goal of a requester could be to maximize the informativeness of the sensor readings rather than the quality of the information alone. For example, a sensor measurement which stays constant for most of the day, year round, is not a very informative sensor. Therefore, a requester may wish to sample less frequently from such a sensor. On the other hand, a sensor which varies frequently a day provides a more informative measurement. A requester may wish to sample from this sensor more frequently to keep up with the changes.
+We suggest investigation of a novel manner to evaluate measurement quality that is not based solely on the reliability of the workers, but also on the history of measurements from those workers, and in correlated areas. The goal of a requester could be to maximize the informativeness of the sensor readings rather than the quality of the information alone. For example, a sensor measurement which stays constant for most of the day, year round, is not a very informative sensor. Therefore, a requester may wish to sample less frequently from such a sensor. On the other hand, a sensor which varies frequently a day provides a more informative measurement. A requester may wish to sample from this sensor more frequently to keep up with the changes.
 
 Such reasoning comes down to the entropies of the observed distributions. A requester wishing to maximize informativeness can also try to maximize entropy. 
 
